@@ -7,28 +7,20 @@
 $(call inherit-product, device/xiaomi/vili/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/custom/config/common_full_phone.mk)
 
 # Misc
-AXION_CAMERA_REAR_INFO := 108,8,5
-AXION_CAMERA_FRONT_INFO := 16
-AXION_MAINTAINER := Raiva
-AXION_PROCESSOR := Snapdragon_888_5G
-PRODUCT_NO_CAMERA := false
-PERF_DEFAULT_GOV := schedutil
-TARGET_TOUCH_BOOST_SUPPORTED := true
+ASCP_MAINTAINER := Raiva
+WITH_REVANCED := true
 TARGET_INCLUDES_DOLBY := true
 TARGET_INCLUDES_DolbyVision := true
-TARGET_ENABLE_BLUR := true
-TARGET_INCLUDE_AXFX := true
-TARGET_SUPPORTED_REFRESH_RATES := 60,120
 
 # Device identifier
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := vili
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := 2107113SG
-PRODUCT_NAME := lineage_vili
+PRODUCT_NAME := vili
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="vili_global-user 14 UKQ1.231207.002 V816.0.22.0.UKDMIXM release-keys" \
